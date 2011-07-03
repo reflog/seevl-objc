@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECADF8CE13C0CAA60019A43D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF8CD13C0CAA60019A43D /* Foundation.framework */; };
+		ECADF8D913C0CAA60019A43D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF8D813C0CAA60019A43D /* UIKit.framework */; };
+		ECADF8DA13C0CAA60019A43D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF8CD13C0CAA60019A43D /* Foundation.framework */; };
+		ECADF8DC13C0CAA60019A43D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF8DB13C0CAA60019A43D /* CoreGraphics.framework */; };
+		ECADF8DF13C0CAA60019A43D /* liblibseevl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF8CA13C0CAA60019A43D /* liblibseevl.a */; };
+		ECADF8E513C0CAA60019A43D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECADF8E313C0CAA60019A43D /* InfoPlist.strings */; };
+		ECADF8E813C0CAA60019A43D /* libseevlTests.h in Resources */ = {isa = PBXBuildFile; fileRef = ECADF8E713C0CAA60019A43D /* libseevlTests.h */; };
+		ECADF8EA13C0CAA60019A43D /* libseevlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF8E913C0CAA60019A43D /* libseevlTests.m */; };
+		ECADF90013C0CAEE0019A43D /* SeevlEntityUrls.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADF8F413C0CAEE0019A43D /* SeevlEntityUrls.h */; };
+		ECADF90113C0CAEE0019A43D /* SeevlEntityUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF8F513C0CAEE0019A43D /* SeevlEntityUrls.m */; };
+		ECADF90613C0CAEE0019A43D /* SeevlEntityLinks.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADF8FA13C0CAEE0019A43D /* SeevlEntityLinks.h */; };
+		ECADF90713C0CAEE0019A43D /* SeevlEntityLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF8FB13C0CAEE0019A43D /* SeevlEntityLinks.m */; };
+		ECADF90813C0CAEE0019A43D /* SeevlEntityInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADF8FC13C0CAEE0019A43D /* SeevlEntityInfo.h */; };
+		ECADF90913C0CAEE0019A43D /* SeevlEntityInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF8FD13C0CAEE0019A43D /* SeevlEntityInfo.m */; };
+		ECADF90E13C0CB170019A43D /* SeevlEntityObject.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADF90C13C0CB170019A43D /* SeevlEntityObject.h */; };
+		ECADF90F13C0CB170019A43D /* SeevlEntityObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF90D13C0CB170019A43D /* SeevlEntityObject.m */; };
+		ECADF91213C0CC390019A43D /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADF91013C0CC390019A43D /* JSONKit.h */; };
+		ECADF91313C0CC390019A43D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF91113C0CC390019A43D /* JSONKit.m */; };
+		ECADF91613C0CC580019A43D /* Seevl.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADF91413C0CC570019A43D /* Seevl.h */; };
+		ECADF91713C0CC580019A43D /* Seevl.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF91513C0CC570019A43D /* Seevl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECADF8DD13C0CAA60019A43D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECADF8C113C0CAA60019A43D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECADF8C913C0CAA60019A43D;
+			remoteInfo = libseevl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECADF8CA13C0CAA60019A43D /* liblibseevl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibseevl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECADF8CD13C0CAA60019A43D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECADF8D713C0CAA60019A43D /* libseevlTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libseevlTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECADF8D813C0CAA60019A43D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECADF8DB13C0CAA60019A43D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECADF8E213C0CAA60019A43D /* libseevlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libseevlTests-Info.plist"; sourceTree = "<group>"; };
+		ECADF8E413C0CAA60019A43D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECADF8E613C0CAA60019A43D /* libseevlTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libseevlTests-Prefix.pch"; sourceTree = "<group>"; };
+		ECADF8E713C0CAA60019A43D /* libseevlTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libseevlTests.h; sourceTree = "<group>"; };
+		ECADF8E913C0CAA60019A43D /* libseevlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libseevlTests.m; sourceTree = "<group>"; };
+		ECADF8F413C0CAEE0019A43D /* SeevlEntityUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeevlEntityUrls.h; sourceTree = "<group>"; };
+		ECADF8F513C0CAEE0019A43D /* SeevlEntityUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeevlEntityUrls.m; sourceTree = "<group>"; };
+		ECADF8FA13C0CAEE0019A43D /* SeevlEntityLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeevlEntityLinks.h; sourceTree = "<group>"; };
+		ECADF8FB13C0CAEE0019A43D /* SeevlEntityLinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeevlEntityLinks.m; sourceTree = "<group>"; };
+		ECADF8FC13C0CAEE0019A43D /* SeevlEntityInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeevlEntityInfo.h; sourceTree = "<group>"; };
+		ECADF8FD13C0CAEE0019A43D /* SeevlEntityInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeevlEntityInfo.m; sourceTree = "<group>"; };
+		ECADF90C13C0CB170019A43D /* SeevlEntityObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeevlEntityObject.h; sourceTree = "<group>"; };
+		ECADF90D13C0CB170019A43D /* SeevlEntityObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeevlEntityObject.m; sourceTree = "<group>"; };
+		ECADF91013C0CC390019A43D /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = ../../JSONKit/JSONKit.h; sourceTree = "<group>"; };
+		ECADF91113C0CC390019A43D /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../../JSONKit/JSONKit.m; sourceTree = "<group>"; };
+		ECADF91413C0CC570019A43D /* Seevl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seevl.h; sourceTree = "<group>"; };
+		ECADF91513C0CC570019A43D /* Seevl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seevl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECADF8C713C0CAA60019A43D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECADF8CE13C0CAA60019A43D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECADF8D313C0CAA60019A43D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECADF8D913C0CAA60019A43D /* UIKit.framework in Frameworks */,
+				ECADF8DA13C0CAA60019A43D /* Foundation.framework in Frameworks */,
+				ECADF8DC13C0CAA60019A43D /* CoreGraphics.framework in Frameworks */,
+				ECADF8DF13C0CAA60019A43D /* liblibseevl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECADF8BF13C0CAA60019A43D = {
+			isa = PBXGroup;
+			children = (
+				ECADF8CF13C0CAA60019A43D /* libseevl */,
+				ECADF8E013C0CAA60019A43D /* libseevlTests */,
+				ECADF8CC13C0CAA60019A43D /* Frameworks */,
+				ECADF8CB13C0CAA60019A43D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECADF8CB13C0CAA60019A43D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECADF8CA13C0CAA60019A43D /* liblibseevl.a */,
+				ECADF8D713C0CAA60019A43D /* libseevlTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECADF8CC13C0CAA60019A43D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECADF8CD13C0CAA60019A43D /* Foundation.framework */,
+				ECADF8D813C0CAA60019A43D /* UIKit.framework */,
+				ECADF8DB13C0CAA60019A43D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECADF8CF13C0CAA60019A43D /* libseevl */ = {
+			isa = PBXGroup;
+			children = (
+				ECADF91013C0CC390019A43D /* JSONKit.h */,
+				ECADF91113C0CC390019A43D /* JSONKit.m */,
+				ECADF8F413C0CAEE0019A43D /* SeevlEntityUrls.h */,
+				ECADF8F513C0CAEE0019A43D /* SeevlEntityUrls.m */,
+				ECADF8FA13C0CAEE0019A43D /* SeevlEntityLinks.h */,
+				ECADF8FB13C0CAEE0019A43D /* SeevlEntityLinks.m */,
+				ECADF90C13C0CB170019A43D /* SeevlEntityObject.h */,
+				ECADF90D13C0CB170019A43D /* SeevlEntityObject.m */,
+				ECADF8FC13C0CAEE0019A43D /* SeevlEntityInfo.h */,
+				ECADF8FD13C0CAEE0019A43D /* SeevlEntityInfo.m */,
+				ECADF91413C0CC570019A43D /* Seevl.h */,
+				ECADF91513C0CC570019A43D /* Seevl.m */,
+			);
+			path = libseevl;
+			sourceTree = "<group>";
+		};
+		ECADF8E013C0CAA60019A43D /* libseevlTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECADF8E713C0CAA60019A43D /* libseevlTests.h */,
+				ECADF8E913C0CAA60019A43D /* libseevlTests.m */,
+				ECADF8E113C0CAA60019A43D /* Supporting Files */,
+			);
+			path = libseevlTests;
+			sourceTree = "<group>";
+		};
+		ECADF8E113C0CAA60019A43D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECADF8E213C0CAA60019A43D /* libseevlTests-Info.plist */,
+				ECADF8E313C0CAA60019A43D /* InfoPlist.strings */,
+				ECADF8E613C0CAA60019A43D /* libseevlTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ECADF8C813C0CAA60019A43D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECADF90013C0CAEE0019A43D /* SeevlEntityUrls.h in Headers */,
+				ECADF90613C0CAEE0019A43D /* SeevlEntityLinks.h in Headers */,
+				ECADF90813C0CAEE0019A43D /* SeevlEntityInfo.h in Headers */,
+				ECADF90E13C0CB170019A43D /* SeevlEntityObject.h in Headers */,
+				ECADF91213C0CC390019A43D /* JSONKit.h in Headers */,
+				ECADF91613C0CC580019A43D /* Seevl.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ECADF8C913C0CAA60019A43D /* libseevl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECADF8ED13C0CAA60019A43D /* Build configuration list for PBXNativeTarget "libseevl" */;
+			buildPhases = (
+				ECADF8C613C0CAA60019A43D /* Sources */,
+				ECADF8C713C0CAA60019A43D /* Frameworks */,
+				ECADF8C813C0CAA60019A43D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libseevl;
+			productName = libseevl;
+			productReference = ECADF8CA13C0CAA60019A43D /* liblibseevl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		ECADF8D613C0CAA60019A43D /* libseevlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECADF8F013C0CAA60019A43D /* Build configuration list for PBXNativeTarget "libseevlTests" */;
+			buildPhases = (
+				ECADF8D213C0CAA60019A43D /* Sources */,
+				ECADF8D313C0CAA60019A43D /* Frameworks */,
+				ECADF8D413C0CAA60019A43D /* Resources */,
+				ECADF8D513C0CAA60019A43D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECADF8DE13C0CAA60019A43D /* PBXTargetDependency */,
+			);
+			name = libseevlTests;
+			productName = libseevlTests;
+			productReference = ECADF8D713C0CAA60019A43D /* libseevlTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECADF8C113C0CAA60019A43D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = ECADF8C413C0CAA60019A43D /* Build configuration list for PBXProject "libseevl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ECADF8BF13C0CAA60019A43D;
+			productRefGroup = ECADF8CB13C0CAA60019A43D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECADF8C913C0CAA60019A43D /* libseevl */,
+				ECADF8D613C0CAA60019A43D /* libseevlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECADF8D413C0CAA60019A43D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECADF8E513C0CAA60019A43D /* InfoPlist.strings in Resources */,
+				ECADF8E813C0CAA60019A43D /* libseevlTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ECADF8D513C0CAA60019A43D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECADF8C613C0CAA60019A43D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECADF90113C0CAEE0019A43D /* SeevlEntityUrls.m in Sources */,
+				ECADF90713C0CAEE0019A43D /* SeevlEntityLinks.m in Sources */,
+				ECADF90913C0CAEE0019A43D /* SeevlEntityInfo.m in Sources */,
+				ECADF90F13C0CB170019A43D /* SeevlEntityObject.m in Sources */,
+				ECADF91313C0CC390019A43D /* JSONKit.m in Sources */,
+				ECADF91713C0CC580019A43D /* Seevl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECADF8D213C0CAA60019A43D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECADF8EA13C0CAA60019A43D /* libseevlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECADF8DE13C0CAA60019A43D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECADF8C913C0CAA60019A43D /* libseevl */;
+			targetProxy = ECADF8DD13C0CAA60019A43D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECADF8E313C0CAA60019A43D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECADF8E413C0CAA60019A43D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECADF8EB13C0CAA60019A43D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ECADF8EC13C0CAA60019A43D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		ECADF8EE13C0CAA60019A43D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/libseevl.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECADF8EF13C0CAA60019A43D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DSTROOT = /tmp/libseevl.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECADF8F113C0CAA60019A43D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libseevlTests/libseevlTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "libseevlTests/libseevlTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ECADF8F213C0CAA60019A43D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libseevlTests/libseevlTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "libseevlTests/libseevlTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECADF8C413C0CAA60019A43D /* Build configuration list for PBXProject "libseevl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECADF8EB13C0CAA60019A43D /* Debug */,
+				ECADF8EC13C0CAA60019A43D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECADF8ED13C0CAA60019A43D /* Build configuration list for PBXNativeTarget "libseevl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECADF8EE13C0CAA60019A43D /* Debug */,
+				ECADF8EF13C0CAA60019A43D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECADF8F013C0CAA60019A43D /* Build configuration list for PBXNativeTarget "libseevlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECADF8F113C0CAA60019A43D /* Debug */,
+				ECADF8F213C0CAA60019A43D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECADF8C113C0CAA60019A43D /* Project object */;
+}
