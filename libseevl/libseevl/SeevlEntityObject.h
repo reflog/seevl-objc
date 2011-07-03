@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-
-@interface EntityObject : NSObject {
-    
+@interface SeevlEntityObject : NSObject {
+    NSString *provenance;
+    NSString *value;
 }
+
+@property (nonatomic, copy) NSString *provenance;
+@property (nonatomic, copy) NSString *value;
++ (SeevlEntityObject*) fromDictionary:(NSDictionary*)d ;
 
 @end

@@ -6,6 +6,7 @@
 //  Copyright 2011. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 
 @interface SeevlEntityInfo : NSObject {
 
@@ -15,6 +16,8 @@
     NSString *uri;
 
 }
+
++ (SeevlEntityInfo*) fromDictionary:(NSDictionary*)d;
 
 @property (nonatomic, copy) NSString *description;
 @property (nonatomic, copy) NSString *name;

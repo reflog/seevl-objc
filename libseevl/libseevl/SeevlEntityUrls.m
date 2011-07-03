@@ -6,9 +6,10 @@
 //  Copyright 2011. All rights reserved.
 //
 
-#import "Entity"
+#import "SeevlEntityUrls.h"
 
-@implementation Entity
+@implementation SeevlEntityUrls
+@synthesize facts, infos, links, related, topics, uri;
 
 
 - (void)dealloc; {
@@ -22,6 +23,29 @@
 
     [super dealloc];
 
+}
+
+- (id)initWithFacts:(NSString*)aFacts infos:(NSString*)anInfos links:(NSString*)aLinks related:(NSString*)aRelated topics:(NSString*)aTopics uri:(NSString*)anUri 
+{
+    if ((self = [super init])) {
+        facts = [aFacts copy];
+        infos = [anInfos copy];
+        links = [aLinks copy];
+        related = [aRelated copy];
+        topics = [aTopics copy];
+        uri = [anUri copy];
+    }
+    return self;
+}
+
++ (SeevlEntityUrls*) fromDictionary:(SeevlEntityUrls*)d {
+    return                 [[[SeevlEntityUrls alloc] initWithFacts:[d valueForKey:@"facts"]
+                                                             infos:[d valueForKey:@"infos"]
+                                                             links:[d valueForKey:@"links"]
+                                                           related:[d valueForKey:@"related"]
+                                                            topics:[d valueForKey:@"topics"]
+                                                               uri:[d valueForKey:@"uri"] ]autorelease];
+    
 }
 
 

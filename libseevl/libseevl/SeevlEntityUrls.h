@@ -5,11 +5,10 @@
 //  Created by reflog on 7/3/11.
 //  Copyright 2011. All rights reserved.
 //
+#import <Foundation/Foundation.h>
 
-#import <Cocoa/Cocoa.h>
 
-
-@interface Entity : NSObject {
+@interface SeevlEntityUrls : NSObject {
 
     NSString *facts;
     NSString *infos;
@@ -26,6 +25,8 @@
 @property (nonatomic, copy) NSString *related;
 @property (nonatomic, copy) NSString *topics;
 @property (nonatomic, copy) NSString *uri;
-- (id)init;
-- (id)initWithFacts:(NSString*)aFacts infos:(NSString*)anInfos links:(NSString*)aLinks related:(NSString*)aRelated topics:(NSString*)aTopics uri:(NSString*)anUri;
+
++ (SeevlEntityUrls*) fromDictionary:(SeevlEntityUrls*)d;
+
+
 @end

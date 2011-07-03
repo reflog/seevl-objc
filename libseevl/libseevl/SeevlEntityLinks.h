@@ -5,11 +5,9 @@
 //  Created by reflog on 7/3/11.
 //  Copyright 2011. All rights reserved.
 //
+#import <Foundation/Foundation.h>
 
-#import <Cocoa/Cocoa.h>
-
-
-@interface EntityLink : NSObject {
+@interface SeevlEntityLinks : NSObject {
 
     NSArray *homepage;
     NSArray *musicbrainz;
@@ -22,6 +20,5 @@
 @property (nonatomic, copy) NSArray *musicbrainz;
 @property (nonatomic, copy) NSArray *nytimes;
 @property (nonatomic, copy) NSArray *wikipedia;
-- (id)init;
-- (id)initWithHomepage:(NSArray*)anHomepage musicbrainz:(NSArray*)aMusicbrainz nytimes:(NSArray*)aNytimes wikipedia:(NSArray*)aWikipedia;
++ (SeevlEntityLinks*) fromDictionary:(SeevlEntityLinks*)d;
 @end
