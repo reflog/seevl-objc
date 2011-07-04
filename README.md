@@ -3,7 +3,8 @@ The JSON parsing is performed using JSONKit
 
 Here's a short example of how you can use this library:
 
-Create URL Request for search-by-name http://developers.seevl.net/wiki
+#### Create URL Request for search-by-name http://developers.seevl.net/wiki
+
 ```objective-c
     NSURLRequest* req = [Seevl searchResultsRequestForQuery:@"beatles"];
     NSURLResponse* resp = nil;
@@ -15,22 +16,27 @@ Create URL Request for search-by-name http://developers.seevl.net/wiki
     //Pick first result
     SeevlEntityInfo* ei = [results objectAtIndex:0];
 ```    
-Create Infos request http://developers.seevl.net/wiki/infos
+
+#### Create Infos request http://developers.seevl.net/wiki/infos
+
 ```objective-c
     req = [Seevl getInfosRequestForSid:ei.sid];
     data = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&err];
     //Parse infos result
     NSDictionary* infos = [Seevl parseInfos:data];
-``    
-Create related request http://developers.seevl.net/wiki/related
-```objective-c
+```
 
+#### Create related request http://developers.seevl.net/wiki/related
+
+```objective-c
     req = [Seevl getRelatedRequestForSid:ei.sid];
     data = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&err];
     //Parse the list of relationships
     results = [Seevl parseRelatedFromData:data];
 ```    
-Explain one relationship http://developers.seevl.net/wiki/explain
+
+#### Explain one relationship http://developers.seevl.net/wiki/explain
+
 ```objective-c
     req = [Seevl getRelatedRequestForSid1:ei.sid sid2:[[results objectAtIndex:0] sid]];
     data = [NSURLConnection sendSynchronousRequest:req returningResponse:&resp error:&err];
