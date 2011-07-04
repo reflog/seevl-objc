@@ -3,12 +3,14 @@
 //  libseevl
 //
 //  Created by reflog on 7/3/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "SeevlEntityInfo.h"
 #import "SeevlEntityObject.h"
+#import "SeevlEntityRelationship.h"
+#import "SeevlEntityRelationshipDetail.h"
+
 //IMPORTANT: Replace the values below with your keys. These values came from the Seevl manual and may not work.
 
 #define SEEVL_API_KEY @"65e7fbe154e8cee6c1704a9358dd8939"
@@ -25,7 +27,8 @@
 + (NSURLRequest*) getRelatedRequestForSid1:(NSString*)sid1 sid2:(NSString*)sid2;
 
 + (NSArray*) searchResultsFromData:(NSData*)data;
-
++ (NSArray*) parseRelatedFromData:(NSData*)data;
++ (SeevlEntityRelationshipDetail*) parseRelionshipDetailFromData:(NSData*)data;
 + (NSDictionary*) parseInfos:(NSData*)data;
 
 @end

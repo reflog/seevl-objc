@@ -27,6 +27,10 @@
 		ECADF91313C0CC390019A43D /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF91113C0CC390019A43D /* JSONKit.m */; };
 		ECADF91613C0CC580019A43D /* Seevl.h in Headers */ = {isa = PBXBuildFile; fileRef = ECADF91413C0CC570019A43D /* Seevl.h */; };
 		ECADF91713C0CC580019A43D /* Seevl.m in Sources */ = {isa = PBXBuildFile; fileRef = ECADF91513C0CC570019A43D /* Seevl.m */; };
+		ECE766DB13C1CA7D0048913E /* SeevlEntityRelationship.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE766D913C1CA7D0048913E /* SeevlEntityRelationship.h */; };
+		ECE766DC13C1CA7D0048913E /* SeevlEntityRelationship.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE766DA13C1CA7D0048913E /* SeevlEntityRelationship.m */; };
+		ECE766E013C1CEA20048913E /* SeevlEntityRelationshipDetail.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE766DE13C1CEA20048913E /* SeevlEntityRelationshipDetail.h */; };
+		ECE766E113C1CEA20048913E /* SeevlEntityRelationshipDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE766DF13C1CEA20048913E /* SeevlEntityRelationshipDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		ECADF91113C0CC390019A43D /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = ../../JSONKit/JSONKit.m; sourceTree = "<group>"; };
 		ECADF91413C0CC570019A43D /* Seevl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seevl.h; sourceTree = "<group>"; };
 		ECADF91513C0CC570019A43D /* Seevl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seevl.m; sourceTree = "<group>"; };
+		ECE766D913C1CA7D0048913E /* SeevlEntityRelationship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeevlEntityRelationship.h; sourceTree = "<group>"; };
+		ECE766DA13C1CA7D0048913E /* SeevlEntityRelationship.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeevlEntityRelationship.m; sourceTree = "<group>"; };
+		ECE766DE13C1CEA20048913E /* SeevlEntityRelationshipDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeevlEntityRelationshipDetail.h; sourceTree = "<group>"; };
+		ECE766DF13C1CEA20048913E /* SeevlEntityRelationshipDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeevlEntityRelationshipDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,10 @@
 				ECADF8FD13C0CAEE0019A43D /* SeevlEntityInfo.m */,
 				ECADF91413C0CC570019A43D /* Seevl.h */,
 				ECADF91513C0CC570019A43D /* Seevl.m */,
+				ECE766D913C1CA7D0048913E /* SeevlEntityRelationship.h */,
+				ECE766DA13C1CA7D0048913E /* SeevlEntityRelationship.m */,
+				ECE766DE13C1CEA20048913E /* SeevlEntityRelationshipDetail.h */,
+				ECE766DF13C1CEA20048913E /* SeevlEntityRelationshipDetail.m */,
 			);
 			path = libseevl;
 			sourceTree = "<group>";
@@ -168,6 +180,8 @@
 				ECADF90E13C0CB170019A43D /* SeevlEntityObject.h in Headers */,
 				ECADF91213C0CC390019A43D /* JSONKit.h in Headers */,
 				ECADF91613C0CC580019A43D /* Seevl.h in Headers */,
+				ECE766DB13C1CA7D0048913E /* SeevlEntityRelationship.h in Headers */,
+				ECE766E013C1CEA20048913E /* SeevlEntityRelationshipDetail.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +286,8 @@
 				ECADF90F13C0CB170019A43D /* SeevlEntityObject.m in Sources */,
 				ECADF91313C0CC390019A43D /* JSONKit.m in Sources */,
 				ECADF91713C0CC580019A43D /* Seevl.m in Sources */,
+				ECE766DC13C1CA7D0048913E /* SeevlEntityRelationship.m in Sources */,
+				ECE766E113C1CEA20048913E /* SeevlEntityRelationshipDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +437,7 @@
 				ECADF8EF13C0CAA60019A43D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECADF8F013C0CAA60019A43D /* Build configuration list for PBXNativeTarget "libseevlTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +446,7 @@
 				ECADF8F213C0CAA60019A43D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

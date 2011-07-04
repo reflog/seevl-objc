@@ -34,6 +34,9 @@
     return ret;
 }
 
+- (NSString*) description {
+    return [NSString stringWithFormat:@"<SeevlEntityInfo> name %@ sid %@ uri %@ descr %@", name,sid,uri,description,nil];
+}
 
 - (void)dealloc; {
     [description release], description = nil;

@@ -2,9 +2,7 @@
 //  EntityObject.m
 //  libseevl
 //
-//  Created by reflog on 7/3/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  Created by reflog on 7/3/11
 
 #import "SeevlEntityObject.h"
 
@@ -27,7 +25,7 @@
 }
 
 - (NSString*) description {
-    return [NSString stringWithFormat:@"Provenance: %@\nValue: %@", provenance, value, nil];
+    return [NSString stringWithFormat:@"<SeevlEntityObject> Provenance: %@ Value: %@", provenance, value, nil];
 }
 
 - (void)dealloc; {

@@ -3,7 +3,6 @@
 //  libseevl
 //
 //  Created by reflog on 7/3/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import "Seevl.h"
@@ -36,6 +35,23 @@
 
 + (NSURLRequest*) getRelatedRequestForSid1:(NSString*)sid1 sid2:(NSString*)sid2 {
     return [Seevl requestForURLString: [SEEVL_API_ENDPOINT stringByAppendingFormat:@"entity/%@/related/%@", sid1,sid2]];
+}
+
++ (NSArray*) parseRelatedFromData:(NSData*)data {
+    id o = [data objectFromJSONData];
+    NSArray* results = [o valueForKey:@"related"];
+    if (results) {
+        NSMutableArray* res = [NSMutableArray arrayWithCapacity:[results count]];
+        for (id r in results) {
+            [res addObject:[SeevlEntityInfo fromDictionary:r]];
+        }
+        return res;
+    }
+    return nil;
+}
++ (SeevlEntityRelationshipDetail*) parseRelionshipDetailFromData:(NSData*)data {
+    id o = [[data objectFromJSONData] valueForKey:@"explain"];
+    return [SeevlEntityRelationshipDetail fromDictionary:o];
 }
 
 
